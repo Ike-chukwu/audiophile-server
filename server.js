@@ -22,7 +22,9 @@ app.use(express.static("public"));
 app.use(express.json());
 
 
-
+app.get("/", (res, req) => {
+    return res.send("Up and Running");
+  })
 
 
 
