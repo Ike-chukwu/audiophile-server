@@ -44,8 +44,8 @@ app.post("/checkout", async (req, res) => {
   const session = await stripe.checkout.sessions.create({
     line_items: lineItems,
     mode: "payment",
-    success_url:"https://audiophile-ecommerce-site-two.vercel.app/success" ,
-    cancel_url: "https://audiophile-ecommerce-site-two.vercel.app/cancel",
+    success_url:"https://audiophile-fe.vercel.app/success" ,
+    cancel_url: "https://audiophile-fe.vercel.app/cancel",
   });
 
   res.send(
